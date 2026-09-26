@@ -4,16 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Explore Egypt</title>
-    <meta
-      name="description"
-      content="Explore Egypt is a beginner-friendly educational website about Egyptian governorates, culture, attractions, and history."
-    />
+    <meta name="description" content="Explore Egypt is a beginner-friendly educational website about Egyptian governorates, culture, attractions, and history." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -23,173 +17,41 @@
           <span class="brand-mark">🏛️</span>
           <span data-i18n="brand">Explore Egypt</span>
         </div>
-
-        <button class="nav-toggle" aria-label="Open menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-
+        <button class="nav-toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
         <div class="nav-menu">
           <a href="#home" data-i18n="navHome">Home</a>
           <a href="#governorates" data-i18n="navGovernorates">Governorates</a>
           <a href="#about" data-i18n="navAbout">About</a>
           <a href="#contact" data-i18n="navContact">Contact</a>
-
           <div class="language-selector">
             <label for="languageSelect" class="sr-only">Language</label>
-            <select id="languageSelect" aria-label="Select language">
-              <option value="en">English</option>
-              <option value="ar">العربية</option>
-              <option value="de">Deutsch</option>
-              <option value="it">Italiano</option>
-            </select>
+            <select id="languageSelect" aria-label="Select language"><option value="en">English</option><option value="ar">العربية</option><option value="de">Deutsch</option><option value="it">Italiano</option></select>
           </div>
-
-          <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-            <span class="theme-icon">🌙</span>
-          </button>
+          <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark mode" aria-pressed="false"><span class="theme-icon" aria-hidden="true">🌙</span></button>
         </div>
       </nav>
     </header>
 
     <main>
       <section id="home" class="hero-new">
-        <div class="hero-background" style="background-image: url('images/my-photo.jpg');">
-          <div class="hero-overlay"></div>
-        </div>
-
-        <div class="hero-content-new">
-          <div class="container">
-            <div class="hero-text-section">
-              <div class="hero-label" data-i18n="heroEyebrow">Ancient Wonders Await</div>
-              
-              <h1 class="hero-title" data-i18n="heroTitle">Explore Egypt</h1>
-              
-              <p class="hero-subtitle" data-i18n="heroDescription">
-                Discover the majesty of Egypt's ancient civilization, legendary monuments, and vibrant culture through an immersive journey.
-              </p>
-
-              <div class="hero-cta">
-                <a href="#governorates" class="cta-button" data-i18n="exploreButton">
-                  Explore Governorates
-                  <span class="arrow">→</span>
-                </a>
-              </div>
-
-              <div class="hero-stats">
-                <div class="stat-item">
-                  <div class="stat-number">6</div>
-                  <div class="stat-label" data-i18n="statGovernorates">Governorates</div>
-                </div>
-                <div class="stat-item">
-                  <div class="stat-number">5000+</div>
-                  <div class="stat-label" data-i18n="statYears">Years History</div>
-                </div>
-                <div class="stat-item">
-                  <div class="stat-number">4</div>
-                  <div class="stat-label" data-i18n="statLanguages">Languages</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="hero-scroll-indicator">
-          <span data-i18n="scrollHint">Scroll to explore</span>
-        </div>
+        <div class="hero-background" style="background-image: url('images/my-photo.jpg');"><div class="hero-overlay"></div></div>
+        <div class="hero-content-new"><div class="container"><div class="hero-text-section">
+          <div class="hero-label" data-i18n="heroEyebrow">Ancient Wonders Await</div>
+          <h1 class="hero-title" data-i18n="heroTitle">Explore Egypt</h1>
+          <p class="hero-subtitle" data-i18n="heroDescription">Discover the majesty of Egypt's ancient civilization, legendary monuments, and vibrant culture through an immersive journey.</p>
+          <div class="hero-cta"><a href="#governorates" class="cta-button" data-i18n="exploreButton">Explore Governorates <span class="arrow">→</span></a></div>
+          <div class="hero-stats"><div class="stat-item"><div class="stat-number">6</div><div class="stat-label" data-i18n="statGovernorates">Governorates</div></div><div class="stat-item"><div class="stat-number">5000+</div><div class="stat-label" data-i18n="statYears">Years History</div></div><div class="stat-item"><div class="stat-number">4</div><div class="stat-label" data-i18n="statLanguages">Languages</div></div></div>
+        </div></div></div>
+        <div class="hero-scroll-indicator"><span data-i18n="scrollHint">Scroll to explore</span></div>
       </section>
 
-      <section class="search-section container">
-        <div class="search-box">
-          <label for="governorateSearch" class="sr-only">Search Governorates</label>
-          <input
-            type="text"
-            id="governorateSearch"
-            placeholder="Search for a governorate..."
-            data-placeholder-en="Search for a governorate..."
-            data-placeholder-ar="ابحث عن محافظة..."
-            data-placeholder-de="Nach einer Gouvernorat suchen..."
-            data-placeholder-it="Cerca una provincia..."
-          />
-          <span class="search-icon">🔍</span>
-        </div>
-      </section>
-
-      <section id="governorates" class="governorates">
-        <div class="container">
-          <div class="section-heading">
-            <div class="section-label" data-i18n="governoratesEyebrow">Discover destinations</div>
-            <h2 data-i18n="governoratesTitle">Six Wonders of Egypt</h2>
-          </div>
-
-          <div id="governoratesGrid" class="governorates-grid"></div>
-        </div>
-      </section>
-
-      <section id="details" class="details-section">
-        <div class="container">
-          <div id="governorateDetails" class="details-panel">
-            <div class="details-placeholder">
-              <h3 data-i18n="detailsTitle">Choose a governorate to explore</h3>
-              <p data-i18n="detailsText">
-                Click the "Explore" button on any governorate card to see its history, attractions, and culture.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="about" class="about-section">
-        <div class="container section-grid">
-          <div class="about-text">
-            <div class="section-label" data-i18n="aboutEyebrow">Heritage</div>
-            <h2 data-i18n="aboutTitle">A Journey Through Time</h2>
-            <p data-i18n="aboutText1">
-              Egypt stands as a beacon of human achievement and ancient wisdom. For millennia, this extraordinary nation has captivated hearts and minds with its unparalleled monuments and rich cultural heritage.
-            </p>
-            <p data-i18n="aboutText2">
-              From the iconic pyramids to the serene Nile, from bustling Cairo to peaceful Aswan, Egypt offers an unforgettable exploration of history, art, and timeless beauty.
-            </p>
-          </div>
-
-          <div class="about-image">
-            <img
-              src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=900&q=80"
-              alt="Egyptian architecture and culture"
-            />
-          </div>
-        </div>
-      </section>
-
-      <section id="contact" class="contact-section">
-        <div class="container contact-card">
-          <div>
-            <div class="section-label" data-i18n="contactEyebrow">Get in touch</div>
-            <h2 data-i18n="contactTitle">Start Your Egyptian Adventure</h2>
-          </div>
-
-          <form class="contact-form">
-            <input type="text" placeholder="Your name" data-i18n-placeholder="contactName" />
-            <input type="email" placeholder="Email address" data-i18n-placeholder="contactEmail" />
-            <textarea
-              rows="4"
-              placeholder="Tell us what you want to discover..."
-              data-i18n-placeholder="contactMessage"
-            ></textarea>
-            <button type="submit" class="primary-btn" data-i18n="sendButton">Send</button>
-          </form>
-        </div>
-      </section>
+      <section class="search-section container"><div class="search-box"><label for="governorateSearch" class="sr-only">Search Governorates</label><input type="text" id="governorateSearch" placeholder="Search for a governorate..." data-placeholder-en="Search for a governorate..." data-placeholder-ar="ابحث عن محافظة..." data-placeholder-de="Nach einer Gouvernorat suchen..." data-placeholder-it="Cerca una provincia..." /><span class="search-icon">🔍</span></div></section>
+      <section id="governorates" class="governorates"><div class="container"><div class="section-heading"><div class="section-label" data-i18n="governoratesEyebrow">Discover destinations</div><h2 data-i18n="governoratesTitle">Six Wonders of Egypt</h2></div><div id="governoratesGrid" class="governorates-grid"></div></div></section>
+      <section id="details" class="details-section"><div class="container"><div id="governorateDetails" class="details-panel"><div class="details-placeholder"><h3 data-i18n="detailsTitle">Choose a governorate to explore</h3><p data-i18n="detailsText">Click the "Explore" button on any governorate card to see its history, attractions, and culture.</p></div></div></div></section>
+      <section id="about" class="about-section"><div class="container section-grid"><div class="about-text"><div class="section-label" data-i18n="aboutEyebrow">Heritage</div><h2 data-i18n="aboutTitle">A Journey Through Time</h2><p data-i18n="aboutText1">Egypt stands as a beacon of human achievement and ancient wisdom. For millennia, this extraordinary nation has captivated hearts and minds with its unparalleled monuments and rich cultural heritage.</p><p data-i18n="aboutText2">From the iconic pyramids to the serene Nile, from bustling Cairo to peaceful Aswan, Egypt offers an unforgettable exploration of history, art, and timeless beauty.</p></div><div class="about-image"><img src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=900&q=80" alt="Egyptian architecture and culture" /></div></div></section>
+      <section id="contact" class="contact-section"><div class="container contact-card"><div><div class="section-label" data-i18n="contactEyebrow">Get in touch</div><h2 data-i18n="contactTitle">Start Your Egyptian Adventure</h2></div><form class="contact-form"><input type="text" placeholder="Your name" data-i18n-placeholder="contactName" /><input type="email" placeholder="Email address" data-i18n-placeholder="contactEmail" /><textarea rows="4" placeholder="Tell us what you want to discover..." data-i18n-placeholder="contactMessage"></textarea><button type="submit" class="primary-btn" data-i18n="sendButton">Send</button></form></div></section>
     </main>
-
-    <footer class="site-footer">
-      <div class="container footer-content">
-        <p>© 2026 Explore Egypt</p>
-        <p data-i18n="footerText">Timeless Heritage. Modern Discovery.</p>
-      </div>
-    </footer>
-
+    <footer class="site-footer"><div class="container footer-content"><p>© 2026 Explore Egypt</p><p data-i18n="footerText">Timeless Heritage. Modern Discovery.</p></div></footer>
     <script src="script.js"></script>
   </body>
 </html>
